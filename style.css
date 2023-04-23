@@ -1,0 +1,23 @@
+
+*{
+    box-sizing: border-box;
+}
+#container{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+#container >div{
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    border: 1px solid black;
+    flex: 1 1 auto;
+    
+}

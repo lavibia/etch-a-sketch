@@ -7,6 +7,21 @@ body{
     width: 100vw;
     height: 100vh;
 }
+#size{
+    width: fit-content;
+    margin: 20px auto;
+}
+button{
+    width: 30vw;
+    padding: 7px;
+    background-color:#367031 ;
+    color: beige;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
 #container{
     width: 90vh;
     height:90vh;

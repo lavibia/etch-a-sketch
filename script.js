@@ -1,10 +1,7 @@
-function color(cell) {
-    cell.classList.add("color");
-}
+
 
 function createGrid(size) {
     let tag,
-        text,
         element, col;
 
     for (let i = 0; i < size; i++) {
@@ -18,7 +15,9 @@ function createGrid(size) {
 
             col = document.getElementsByClassName("col")[i];
             col.appendChild(tag);
-            tag.setAttribute("onmouseover", "color(this)");
+            tag.addEventListener("mouseover", (e)=>{
+               e.target.classList.add("color");
+            })
 
         }
 
@@ -50,5 +49,5 @@ function changeGrid() {
     }
 }
 
-createGrid(16);
+createGrid(10);
 document.getElementById("btnSize").addEventListener("click", changeGrid);
